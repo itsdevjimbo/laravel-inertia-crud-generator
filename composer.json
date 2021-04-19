@@ -1,0 +1,36 @@
+{
+    "name": "jmagusib/crud-generator",
+    "description": "Crud Generator for inertiajs",
+    "keywords": [
+        "laravel",
+        "model",
+        "migration",
+        "model",
+        "crud",
+        "repository",
+        "view",
+        "generator"
+    ],
+    "authors": [
+        {
+            "name": "Jimbo Magusib",
+            "email": "magusibjimbo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JMagusib\\CrudGenerator\\Providers\\CrudGeneratorServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "JMagusib\\CrudGenerator\\": "src/"
+        }
+    }
+}
