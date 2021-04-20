@@ -5,8 +5,11 @@ use Inertia\Inertia;
 
 class CrudGeneratorController extends Controller
 {
+
     public function index()
     {
-        return Inertia::render('CrudGenerator/Index');
+        return Inertia::render('CrudGenerator/Index',[
+            'dataTypes' => Controller::FIELD_TYPES
+        ]);
     }
 }
